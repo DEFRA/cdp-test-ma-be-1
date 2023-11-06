@@ -12,7 +12,6 @@ permissions:
 
 jobs:
   templating:
-    if: github.run_number == 1 && github.repository != 'DEFRA/cdp-node-backend-template'
     name: CDP-templating-workflow
     runs-on: ubuntu-latest
     steps:
