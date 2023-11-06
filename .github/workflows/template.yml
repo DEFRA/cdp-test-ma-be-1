@@ -32,6 +32,8 @@ jobs:
           rm .github/workflows/template.yml
       - name: Commit and push changes
         run: |
+          rm -rf .git
+          git init .
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'github-actions@github.com'
           git add -A
