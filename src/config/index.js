@@ -17,7 +17,7 @@ const config = convict({
   serviceName: {
     doc: 'Api Service Name',
     format: String,
-    default: 'CDP Node.js Backend Template'
+    default: 'cdp-test-ma-be-1'
   },
   root: {
     doc: 'Project root',
@@ -27,7 +27,7 @@ const config = convict({
   appPathPrefix: {
     doc: 'Application url path prefix this is needed only until we have host based routing',
     format: String,
-    default: '/cdp-node-backend-template'
+    default: '/cdp-test-ma-be-1'
   },
   isProduction: {
     doc: 'If this application running in the production environment',
@@ -59,7 +59,7 @@ const config = convict({
   mongoDatabase: {
     doc: 'database for mongodb',
     format: '*',
-    default: 'cdp-node-backend-template',
+    default: 'cdp-test-ma-be-1',
     env: 'MONGO_DATABASE'
   },
   mongoCertPath: {
