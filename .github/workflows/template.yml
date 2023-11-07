@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --local user.name 'GitHub Actions'
           git config --local user.email 'github-actions@github.com'
-          git diff HEAD
+          git status
           git add -A
           git commit -m "Applying template changes"
           git push origin main
